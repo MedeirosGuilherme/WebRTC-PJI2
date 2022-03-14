@@ -19,11 +19,11 @@ Clique em:
 5: "continue"  
 6: Selecione "Default account for Firebase"  
 7: "Create project"  
-8: "Firestone Database"
-9: "Start in test mode"
-10: "Next"
-11: "Enable"
-12: "Enable"
+8: "Firestone Database"  
+9: "Start in test mode"  
+10: "Next"  
+11: "Enable"  
+12: "Enable"  
 13: Clone o seguinte repositório com o comando:
 ```bash
 git clone https://github.com/webrtc/FirebaseRTC
@@ -44,17 +44,17 @@ firebase --version
 ```bash
 firebase login
 ```
-18: No site Firebase clique em "Realtime Database"
-19: "Create database"
-20: "Next"
-21: "Start in test mode"
-22: "Enable"
+18: No site Firebase clique em "Realtime Database"  
+19: "Create database"  
+20: "Next"  
+21: "Start in test mode"  
+22: "Enable"  
 23: Associe a aplicação ao projeto Firebase:
 ```bash
 firebase use --add
 ```
-24: Selecione o ID que você acabou de criar nos passos anteriores
-25: Escreva um alias ao seu projeto, por exemplo, "default"
+24: Selecione o ID que você acabou de criar nos passos anteriores  
+25: Escreva um alias ao seu projeto, por exemplo, "default"  
 26: Hospede com o Firebase:
 ```bash
 firebase deploy
