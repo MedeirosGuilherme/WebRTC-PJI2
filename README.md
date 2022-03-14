@@ -1,24 +1,63 @@
-# WebRTC-PJI2
+# WebRTC com Firebase - PJI2
 
-Amostra da transmissão de vídeo e áudio funcionando por WebRTC.
-Aplicação encontrada em https://github.com/TannerGabriel/WebRTC-Video-Broadcast , adaptada pelo grupo.
+Transmissão de vídeo e áudio por WebRTC com Firebase.
+Aplicação encontrada em https://webrtc.org/getting-started/firebase-rtc-codelab e https://github.com/webrtc/FirebaseRTC , adaptada pelo grupo.
 
-## Iniciando o container:
+## Passo a passo:
 
+Certifique-se de que você tenha o Node.js instalado. Caso não tenha, poderá baixá-lo em: https://nodejs.org
+
+### Firebase:
+
+Acesse: https://firebase.google.com
+
+Clique em:
+1: "Go to console"
+2: "Create a project"
+3: Insira o nome do projeto
+4: "continue"
+5: "continue"
+6: Selecione "Default account for Firebase"
+7: "Create project"
+8: "Firestone Database"
+9: "Start in test mode"
+10: "Next"
+11: "Enable"
+12: "Enable"
+13: Clone o seguinte repositório com o comando:
 ```bash
-docker build --tag webrtcvideobroadcast .
-
-docker run -d -p 4000:4000 webrtcvideobroadcast
+git clone https://github.com/webrtc/FirebaseRTC
 ```
-
-## Iniciando a aplicação:
-
-No servidor:
+14: Entre no repositório:
 ```bash
-Entrar em localhost:4000/broadcast.html para iniciar a transmissão
+cd FirebaseRTC
 ```
-
-No cliente:
+15: Instale a interface de linha de comando do Firebase (cogite utilizar "sudo" antes do comando)
 ```bash
-Entrar em localhost:4000 para ver a imagem transmitida
+npm -g install firebase-tools
 ```
+16: Verifique se versão do Firebase CLI é v6.7.1 ou maior
+```bash
+firebase --version
+```
+17: Autorize o Firebase:
+```bash
+firebase login
+```
+18: No site Firebase clique em "Realtime Database"
+19: "Create database"
+20: "Next"
+21: "Start in test mode"
+22: "Enable"
+23: Associe a aplicação ao projeto Firebase:
+```bash
+firebase use --add
+```
+24: Selecione o ID que você acabou de criar nos passos anteriores
+25: Escreva um alias ao seu projeto, por exemplo, "default"
+26: Hospede com o Firebase:
+```bash
+firebase deploy
+```
+27: Pronto, esse comando disponibilizou a url para ser utilizada
+
