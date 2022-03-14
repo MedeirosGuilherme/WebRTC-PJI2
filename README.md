@@ -11,14 +11,14 @@ Certifique-se de que você tenha o Node.js instalado. Caso não tenha, poderá b
 
 Acesse: https://firebase.google.com
 
-Clique em:
-1: "Go to console"
-2: "Create a project"
-3: Insira o nome do projeto
-4: "continue"
-5: "continue"
-6: Selecione "Default account for Firebase"
-7: "Create project"
+Clique em:  
+1: "Go to console"  
+2: "Create a project"  
+3: Insira o nome do projeto  
+4: "continue"  
+5: "continue"  
+6: Selecione "Default account for Firebase"  
+7: "Create project"  
 8: "Firestone Database"
 9: "Start in test mode"
 10: "Next"
